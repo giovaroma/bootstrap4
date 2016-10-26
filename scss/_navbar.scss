@@ -337,7 +337,7 @@
  padding: 0;
  border: 0;
  outline: none;
- background: url("../../img/close-btn.svg") left center no-repeat;
+ background: url("../img/close-btn.svg") left center no-repeat;
  background-size: 1.875em 1.875em;
  overflow: hidden;
  white-space: nowrap;
@@ -347,7 +347,7 @@
  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 .no-svg .close-btn {
- background-image: url("../../img/close-btn.png");
+ background-image: url("../img/close-btn.png");
 }
 .close-btn:focus, .close-btn:hover {
  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
@@ -361,7 +361,7 @@
  padding: 0;
  border: 0;
  outline: none;
- background: url("../../img/nav-icon.svg") left center no-repeat;
+ background: url("../img/nav-icon.svg") left center no-repeat;
  background-size: 1.875em 1.5em;
  overflow: hidden;
  white-space: nowrap;
@@ -377,7 +377,7 @@
   padding: 0;
   border: 0;
   outline: none;
-  background: url("../../img/nav-icon-white.svg") left center no-repeat;
+  background: url("../img/nav-icon-white.svg") left center no-repeat;
   background-size: 1.875em 1.5em;
   overflow: hidden;
   white-space: nowrap;
@@ -387,7 +387,7 @@
 }
 
 .no-svg .nav-btn {
- background-image: url("../../img/nav-icon.png");
+ background-image: url("../img/nav-icon.png");
 }
 .nav-btn:hover, .nav-btn:focus {
  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);

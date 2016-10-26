@@ -50,7 +50,7 @@
   &:after{
     position: absolute;
     content: "";
-    background-image: url(../../img/bg-dd-icon.svg);
+    background-image: url(../img/bg-dd-icon.svg);
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
@@ -84,7 +84,7 @@
 
   &:after {
     @extend %foreground-z;
-    background-image: url(../../img/topography-pattern.svg);
+    background-image: url(../img/topography-pattern.svg);
     background-size:auto;
     background-repeat: repeat;
     top: 0; right:0; bottom:0; left:0;
@@ -101,7 +101,7 @@
 
   &:after {
     @extend %foreground-z;
-    background-image: url(../../img/topography-pattern.svg);
+    background-image: url(../img/topography-pattern.svg);
     background-size:auto;
     background-repeat: repeat;
     top: 0; right:0; bottom:0; left:0;

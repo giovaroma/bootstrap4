@@ -230,7 +230,7 @@ input[type="button"] {
   .btn-iOS:before {
     position: absolute;
     top: 10px; left: 16px;
-    content: url(../../img/appStore-logo.svg);
+    content: url(../img/appStore-logo.svg);
     background-size: 20px;
     margin-right: 30px;
     @include media-breakpoint-up(xs) {
@@ -286,7 +286,7 @@ input[type="button"] {
   .btn-googlePlay:before {
     position: absolute;
     top: 10px; left: 16px;
-    content: url(../../img/googlePlay-logo.svg);
+    content: url(../img/googlePlay-logo.svg);
     background-size: 20px;
     margin-right: 16px;
     @include media-breakpoint-up(xs) {
