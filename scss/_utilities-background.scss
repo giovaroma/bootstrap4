@@ -92,3 +92,20 @@
     opacity:.8;
   }
 }
+
+.brackground-blue-purple-z-dev {
+  @extend %background-z;
+  background: rgb(69,199,250); /* Old browsers */
+  background: linear-gradient(to bottom,  rgba(25,118,210,1) 0%,rgba(149,117,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index:10;
+
+  &:after {
+    @extend %foreground-z;
+    background-image: url(../../img/topography-pattern.svg);
+    background-size:auto;
+    background-repeat: repeat;
+    top: 0; right:0; bottom:0; left:0;
+    z-index:-1;
+    opacity:.8;
+  }
+}

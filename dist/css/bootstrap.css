@@ -7850,13 +7850,13 @@ a.bg-danger:focus, a.bg-danger:hover {
   opacity: .10;
 }
 
-.brackground-blue-purple-z {
+.brackground-blue-purple-z, .brackground-blue-purple-z-dev {
   position: relative;
   display: block;
   width: 100%;
 }
 
-.brackground-blue-purple-z:after {
+.brackground-blue-purple-z:after, .brackground-blue-purple-z-dev:after {
   position: absolute;
   content: "";
 }
@@ -7873,6 +7873,30 @@ a.bg-danger:focus, a.bg-danger:hover {
 }
 
 .brackground-blue-purple-z:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(../../img/topography-pattern.svg);
+  background-repeat: repeat;
+  -webkit-background-size: auto auto;
+          background-size: auto;
+  opacity: .8;
+}
+
+.brackground-blue-purple-z-dev {
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index: 10;
+  background: #45c7fa;
+  /* Old browsers */
+  background: -webkit-gradient(linear, left top, left bottom, from(#1976d2), to(#9575cd));
+  background: -webkit-linear-gradient(top, #1976d2 0%, #9575cd 100%);
+  background:      -o-linear-gradient(top, #1976d2 0%, #9575cd 100%);
+  background:         linear-gradient(to bottom, #1976d2 0%, #9575cd 100%);
+}
+
+.brackground-blue-purple-z-dev:after {
   top: 0;
   right: 0;
   bottom: 0;
