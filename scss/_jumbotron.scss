@@ -1,0 +1,179 @@
+.jumbotron {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  background-color: $jumbotron-bg;
+
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(sm) {
+    // padding: ($jumbotron-padding * 2) $jumbotron-padding;
+    padding: 8rem 2rem; //extra top padding to compensate for the nav
+
+  }
+}
+
+.jumbotron-sm {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  // background-color: $jumbotron-bg; default color
+
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(md) {
+    // padding: ($jumbotron-padding * 4) $jumbotron-padding;
+    padding: 4rem $jumbotron-padding 6rem $jumbotron-padding;
+
+  }
+}
+
+.jumbotron-xsm {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  // background-color: $jumbotron-bg; default color
+
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(md) {
+    // padding: ($jumbotron-padding * 4) $jumbotron-padding;
+    padding: 2rem $jumbotron-padding 5rem $jumbotron-padding;
+
+  }
+}
+
+.jumbotron-lg {
+  padding: $jumbotron-padding ($jumbotron-padding / 2);
+  margin-bottom: $jumbotron-padding;
+  // background-color: $jumbotron-bg; default color
+
+  @include border-radius($border-radius-lg);
+
+  @include media-breakpoint-up(md) {
+    // padding: ($jumbotron-padding * 4) $jumbotron-padding;
+    padding: 7rem $jumbotron-padding 9rem $jumbotron-padding;
+
+  }
+}
+//Jumbotron bg colors
+.jumbotron-blue-purple {
+  background: rgb(69,199,250); /* Old browsers */
+  background: linear-gradient(to bottom,  rgba(69,199,250,1) 0%,rgba(149,117,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c7fa', endColorstr='#1976d2',GradientType=0 ); /* IE6-9 */
+}
+
+.jumbotron-blue-gradient {
+  background: rgb(69,199,250); /* Old browsers */
+  background: linear-gradient(to bottom,  rgba(69,199,250,1) 0%,rgba(25,118,210,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c7fa', endColorstr='#1976d2',GradientType=0 ); /* IE6-9 */
+}
+
+
+.jumbotron-hr {
+  border-top-color: darken($jumbotron-bg, 10%);
+}
+
+.jumbotron-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  @include border-radius(0);
+  overflow:hidden;
+}
+//CUSTOM STYLES
+//offsets the iPad data page img
+.jumbotron-offset-ipad-img {
+  margin-right: -400px;
+}
+//Offset iPhone iamge on index
+.jumbotron-offset-iphone-img {
+  position: relative;
+  margin-right: -300px;
+}
+
+//Set a max width on the iPad data page img
+.jumbotron-img-ipad-lg {
+  max-width:740px;
+  @include media-breakpoint-up(xs) {
+    max-width: 500px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 680px;
+  }
+  @include media-breakpoint-up(lg) {
+    max-width: 740px;
+  }
+}
+
+//Set a max width for iPhones on Index
+.jumbotron-img-iphone-lg {
+
+  @include media-breakpoint-up(xs) {
+    max-width: 300px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: 500px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 680px;
+  }
+  @include media-breakpoint-up(lg) {
+    position:absolute;
+    top: 40px;
+    left:-44px;
+    max-width: 860px;
+  }
+  @include media-breakpoint-up(xl) {
+    position:absolute;
+    top: 30px;
+    left:-44px;
+    max-width: 900px;
+  }
+}
+
+//Set a max width for iPhones on Index
+.jumbotron-img-processor {
+
+  @include media-breakpoint-up(xs) {
+    max-width: 300px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: 500px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 680px;
+  }
+  @include media-breakpoint-up(lg) {
+    position:absolute;
+    top: 40px;
+    left:-44px;
+    max-width: 240px;
+  }
+  @include media-breakpoint-up(xl) {
+    position:absolute;
+    top: 30px;
+    left:100px;
+    max-width: 214px;
+  }
+}
+
+.jumbotron-box-shadow {
+  box-shadow: 15px 18px 62px 0px rgba(20,83,146,1);
+}
+
+.slide-right {
+    animation-name: slide-right;
+    animation-duration: 1.3s;
+    animation-fill-mode:both;
+    }
+    @keyframes slide-right {
+    0% {
+    transform: translateX(100%);
+    visibility: visible;
+    }
+    100% {
+    transform: translateX(0);
+    }
+  }
+
+  //Application page background
+  .bg-appStore {
+    background-image: url('../../img/bg-developer.jpg');
+  }

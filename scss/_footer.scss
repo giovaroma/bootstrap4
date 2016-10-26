@@ -1,0 +1,52 @@
+
+//wrapper to create a sticky footer
+.main {
+  height: calc(100vh - 444px);
+}
+
+footer {
+  a {
+    color: $font-material-medium;
+    font-weight: 300;
+    &:hover {
+      color: $font-material-dark;
+    }
+  }
+  .copyright {
+    font-size: 14px;
+  }
+} //footer
+
+
+  .social-icons {
+    padding-left: 0;
+  & > li {
+    display: inline-block;
+    margin-left: 5px;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $btn-dark;
+
+    p {
+      text-align: center;
+      img {
+        position:relative;
+      }
+      .fb {
+        top: 2px;
+        left:1px;
+      }
+      .twitter {
+        top:3px;
+        left:2px;
+      }
+      .linkedin {
+        top:1px;
+      }
+      .instagram {
+        top:2px;
+      }
+    }
+  }
+} //social-icons

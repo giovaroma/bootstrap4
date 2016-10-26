@@ -1,0 +1,162 @@
+
+//Responsive Images Min and Max width
+.iphone-bp {
+    @include media-breakpoint-up(xl) {
+        margin-top:0rem;
+    }//mq xl
+    @include media-breakpoint-down(lg) {
+        margin-top:5rem;
+    }//mq lg
+    @include media-breakpoint-down(md) {
+        margin-top:2rem;
+        margin-bottom:2rem;
+        @include center-block;
+    }//mq md
+    @include media-breakpoint-down(sm) {
+        width: 260px;
+        margin-left:8rem;
+    }//mq md
+     @include media-breakpoint-down(xs) {
+        width:220px;
+        margin-left:4.6rem;
+
+    }//mq md
+}
+
+//iPad within app page responsive
+.ipad-bp {
+  @include media-breakpoint-up(xl) {
+
+  }//mq xl
+  @include media-breakpoint-down(lg) {
+    margin-top:3rem;
+    margin-left:-80px;
+    min-width:500px;
+
+  }//mq lg
+  @include media-breakpoint-down(md) {
+    margin: 0 auto;
+  }//mq md
+  @include media-breakpoint-down(sm) {
+
+  }//mq md
+   @include media-breakpoint-down(xs) {
+
+  }//mq md
+}
+
+//mq for list item of iphone on left
+.list-iphone-bp-left {
+  @include media-breakpoint-up(xl) {
+    margin-top: 1rem;
+  }//mq xl
+  @include media-breakpoint-up(lg) {
+    margin-top: 6rem;
+  }//mq lg
+  @include media-breakpoint-down(md) {
+    @include center-block;
+    margin-top:3rem;
+  }//mq md
+  @include media-breakpoint-down(sm) {
+    margin-top:2rem;
+  }//mq md
+   @include media-breakpoint-down(xs) {
+
+  }//mq md
+}
+//mq for list item of iphone on right
+.list-iphone-bp-right {
+  @include media-breakpoint-up(xl) {
+    margin-top: 26rem;
+  }//mq xl
+  @include media-breakpoint-up(lg) {
+    margin-top: 26rem;
+  }//mq lg
+  @include media-breakpoint-down(md) {
+    @include center-block;
+  }//mq md
+  @include media-breakpoint-down(sm) {
+
+  }//mq md
+   @include media-breakpoint-down(xs) {
+
+  }//mq md
+}
+
+.list-iphone-align {
+  @include media-breakpoint-down(md) {
+    margin-left:10rem !important;
+  }//mq md
+  @include media-breakpoint-down(sm) {
+    margin-left:4rem !important;
+  }//mq md
+  @include media-breakpoint-down(xs) {
+    margin-left:2rem !important;
+  }//mq md
+}
+//482 x 576
+.ipad-vertical-video {
+  position:relative;
+  width:100%;
+  video {
+    position: absolute;
+    @include media-breakpoint-up(xl) {
+      max-width:462px;
+      top: 45px;
+      left:38px;
+    }//mq xl
+    @include media-breakpoint-down(lg) {
+      max-width:406px;
+      top: 39px;
+      left:-50px;
+    }//mq lg
+    @include media-breakpoint-down(md) {
+      max-width:482px;
+      top: 46px;
+      left:86px;
+    }//mq md
+    @include media-breakpoint-down(sm) {
+      max-width:438px;
+      top: 43px;
+      left:34px;
+    }//mq md
+     @include media-breakpoint-down(xs) {
+       max-width:408px;
+       top: 39px;
+       left:33px;
+    }//mq md
+  }
+}
+//iPhone video on app page
+.iphone-vertical-video {
+  position:relative;
+  width:100%;
+  video {
+    position: absolute;
+    @include media-breakpoint-up(xl) {
+      max-width:258px;
+      top: 58px;
+      left:67px;
+    }//mq xl
+    @include media-breakpoint-down(lg) {
+      max-width:258px;
+      top: 58px;
+      left:65px;
+    }//mq lg
+    @include media-breakpoint-down(md) {
+      max-width:258px;
+      top: 59px;
+      left:204px;
+    }//mq md
+    @include media-breakpoint-down(sm) {
+      max-width:213px;
+      top: 48px;
+      left:141px;
+    }//mq md
+     @include media-breakpoint-down(xs) {
+       max-width:180px;
+       top: 41px;
+       left:86px;
+    }//mq md
+  }
+}

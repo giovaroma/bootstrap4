@@ -1,0 +1,411 @@
+
+//GA js removes iframe from code
+iframe[name='google_conversion_frame'] {
+font-size: 0 !important;
+height: 0 !important;
+line-height: 0 !important;
+margin-top: -13px;
+width: 0 !important;
+}
+
+//iPad mini manu video
+.ipad-mini-vertical-video {
+  position:relative;
+  width:100%;
+  video {
+    position: absolute;
+    width:100%;
+    @include media-breakpoint-up(xl) {
+      max-width:410px;
+      top: 48px;
+      left:38px;
+    }//mq xl
+    @include media-breakpoint-down(lg) {
+      max-width:405px;
+      top: 48px;
+      left:-42px;
+    }//mq lg
+    @include media-breakpoint-down(md) {
+      max-width:409px;
+      top: 48px;
+      left:131px;
+    }//mq md
+    @include media-breakpoint-down(sm) {
+      max-width:409px;
+      top: 48px;
+      left:38px;
+    }//mq md
+     @include media-breakpoint-down(xs) {
+       max-width:405px;
+       top: 48px;
+       left:36px;
+    }//mq md
+  }
+}
+
+//now compatible with any drone section-bg-gray-light
+.compatible-img-width {
+  margin: 0 auto;
+  @include media-breakpoint-up(xl) {
+    width:240px;
+  }
+  @include media-breakpoint-down(lg) {
+    width:240px;
+  }
+  @include media-breakpoint-down(md) {
+    width:240px;
+  }
+  @include media-breakpoint-down(sm) {
+    width:180px;
+  }
+}
+
+.avatar {
+  border-radius: 50%;
+  width:40px;
+  height:40px;
+  margin-right: 10px;
+}
+
+.center-img {
+  margin: 0 auto;
+}
+
+//Case study section
+.case-study {
+  overflow:hidden;
+
+  a {
+
+    &:hover {
+      color: white;
+    }
+  }
+  .case-study-potato {
+      background-image: url(../../img/case-potato.jpg);
+      @include media-breakpoint-up(xl) {
+        height:350px;
+      }
+      @include media-breakpoint-down(lg) {
+        height: 350px;
+      }
+      @include media-breakpoint-down(md) {
+        height:300px;
+      }
+      @include media-breakpoint-down(sm) {
+        height: 240px;
+     }
+   }
+
+  .case-study-soy {
+    background-image: url(../../img/case-soy.jpg);
+    height: 350px;
+    @include media-breakpoint-up(xl) {
+      max-width:570px;
+      margin-right:1rem;
+      height:350px;
+    }
+    @include media-breakpoint-down(lg) {
+      max-width:440px;
+      margin-right:1rem;
+      height: 350px;
+    }
+    @include media-breakpoint-down(md) {
+      max-width:330px;
+      margin-right:1rem;
+      height:300px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width:100%;
+      margin-right:1rem;
+      height: 240px;
+    }
+  }
+  .case-study-construction {
+    background-image: url(../../img/case-construction.jpg);
+    @include media-breakpoint-up(xl) {
+      margin-right:1rem;
+      height:350px;
+    }
+    @include media-breakpoint-down(lg) {
+      margin-right:1rem;
+      height: 350px;
+    }
+    @include media-breakpoint-down(md) {
+      margin-right:1rem;
+      height:300px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-right:1rem;
+      height: 240px;
+    }
+  }
+}
+
+//Pricing Table Toggle monthly and yearly
+.onoffswitch {
+ -webkit-transform: scale(.7);
+ }
+
+ //Toggle Switch
+.onoffswitch {
+    margin: 0 auto;
+    position: relative; width: 206px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 1px solid #D4D4D4; border-radius: 27px;
+}
+.onoffswitch-inner {
+    display: block; width: 207%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 40px; padding: 0; line-height: 40px;
+    font-size: 20px; color: white;  font-weight: 300;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "Paid Per Month";
+    padding-left: 0px;
+    margin-left: -14px;
+    background-color: #78909C; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "Paid Per Year";
+    padding-right: 32px;
+    background-color: $brand-primary; color: #FFFFFF;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 38px; margin: 1px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 165px;
+    border: 1px solid #D4D4D4; border-radius: 27px;
+    transition: all 0.3s ease-in 0s;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px;
+}
+//End Toggle Switch
+
+//Pricing table section
+.pricing-new {
+    max-width: 1200px;
+    width: 98%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin: 0 auto;
+
+    @include media-breakpoint-down(xs) {
+      margin-left:-20px;
+      .btn {
+        font-size:10px;
+        margin-right:5px;
+      }
+
+    }
+
+    a {
+        width: 80%;
+        margin: 0 auto;
+      @include media-breakpoint-down(xs) {
+        width: 70%;
+        min-width: 92px;
+        font-size: 12px;
+      }
+    }
+
+    table {
+            margin-left: auto;
+            margin-right: auto ;
+            width: 100%;
+            text-align: center;
+
+        tr > td:first-child {
+            font-weight: 300;
+            text-align: left;
+            padding-left: 1em;
+            font-size: 1rem;
+          @include media-breakpoint-down(sm) {
+            width: 10%;
+          }
+          @include media-breakpoint-down(xs) {
+            width: 9%;
+          }
+        }
+
+        tr > td:nth-child(4) {
+            background-color: rgb(245, 245, 245);
+        }
+
+        td {
+            padding: .5em 0;
+            width: 20%;
+            @include media-breakpoint-down(sm) {
+              font-size:.8em;
+            }
+
+            @include media-breakpoint-down(xs) {
+              font-size:.7em;
+
+              b {
+                font-size:.7em;
+              }
+            }
+
+
+            h2 {
+                margin:0;
+                padding:0;
+                font-style:italic;
+              @include media-breakpoint-down(sm) {
+                font-size: 1.2em;
+              }
+
+            }
+            h3 {
+                margin:0;
+                padding:0;
+               @include media-breakpoint-down(sm) {
+                font-size: 1.8em;
+              }
+            }
+        }
+
+        .yes::after {
+                content: "";
+                background-image:url("../../img/checkmark-icn.svg");
+                background-repeat: no-repeat;
+                display:block;
+                width: 20px;
+                height: 20px;
+                margin: 0 auto;
+            }
+        .no::after {
+                content: "-";
+                // background-image:url("../../img/x-icn.svg");
+                background-repeat: no-repeat;
+                display:block;
+                width: 20px;
+                height: 20px;
+                margin: 0 auto;
+                color: #dddddd;
+        }
+    }
+}
+.pricing-promo {
+  position: relative;
+   }
+   .new-promo {
+       position: absolute;
+       width: 50px;
+       height: 50px;
+       top: -26px;
+       right: -32px;
+//        background-color: #FF4081;
+       background-color: turquoise;
+       color: white;
+       border:none;
+       -webkit-box-shadow: 3px 3px 5px 0px rgba(204,202,204,1);
+-moz-box-shadow: 3px 3px 5px 0px rgba(204,202,204,1);
+box-shadow: 3px 3px 5px 0px rgba(204,202,204,1);
+       @include media-breakpoint-down(sm) {
+         width: 40px;
+         height: 40px;
+         top:-18px;
+         left: -20px;
+       }
+   }
+   .center {
+       position: relative;
+       top: 12px; right: 0; bottom: 0; left:0;
+       font-weight: 500;
+       @include media-breakpoint-down(sm) {
+           top: 4px;
+       }
+
+}
+
+.pricing-mobile-only {
+       table {
+         tr > td:nth-child(2) {
+           background-color: #F4F9FC;
+       }
+       }
+   }
+.pricing-ag {
+   table {
+       width: 60%;
+       @include media-breakpoint-down(sm) {
+           width: 95%;
+       }
+   }
+    tr > td:nth-child(2) {
+           background-color: #F4F9FC;
+       }
+   tr > td:nth-child(1) {
+           background-color: #F9FDFF;
+       }
+   p:last-child {
+       color: gray;
+       text-align: center;
+   }
+}
+
+.washington-post, .WSJ {
+  @include media-breakpoint-up(xl) {
+    width: 70%;
+    max-width: 220px;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 70%;
+    max-width: 200px;
+  }
+  @include media-breakpoint-down(md) {
+    width:80%;
+    min-width:160px;
+  }
+  @include media-breakpoint-down(sm) {
+    width:40%;
+    min-width:180px;
+  }
+  @include media-breakpoint-down(xs) {
+    width:30%;
+    min-width:180px;
+  }
+}
+
+.tech-crunch {
+  @include media-breakpoint-up(xl) {
+    width: 70%;
+    max-width: 180px;
+  }
+  @include media-breakpoint-down(lg) {
+    width: 70%;
+    max-width: 160px;
+  }
+  @include media-breakpoint-down(md) {
+    width:80%;
+    min-width:140px;
+    width:140px;
+  }
+  @include media-breakpoint-down(sm) {
+    width:40%;
+    min-width:160px;
+    width: 160px;
+  }
+  @include media-breakpoint-down(xs) {
+    width:30%;
+    min-width:140px;
+    width:140px;
+  }
+}

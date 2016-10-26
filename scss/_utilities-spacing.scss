@@ -1,0 +1,136 @@
+// Margin and Padding
+
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left:  auto !important;
+}
+
+@each $prop, $abbrev in (margin: m, padding: p) {
+  @each $size, $lengths in $spacers {
+    $length-x:   map-get($lengths, x);
+    $length-y:   map-get($lengths, y);
+
+    .#{$abbrev}-a-#{$size} { #{$prop}:        $length-y $length-x !important; } // a = All sides
+    .#{$abbrev}-t-#{$size} { #{$prop}-top:    $length-y !important; }
+    .#{$abbrev}-r-#{$size} { #{$prop}-right:  $length-x !important; }
+    .#{$abbrev}-b-#{$size} { #{$prop}-bottom: $length-y !important; }
+    .#{$abbrev}-l-#{$size} { #{$prop}-left:   $length-x !important; }
+
+    // Axes
+    .#{$abbrev}-x-#{$size} {
+      #{$prop}-right:  $length-x !important;
+      #{$prop}-left:   $length-x !important;
+    }
+    .#{$abbrev}-y-#{$size} {
+      #{$prop}-top:    $length-y !important;
+      #{$prop}-bottom: $length-y !important;
+    }
+  }
+}
+
+// Positioning
+
+.pos-f-t {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $zindex-navbar-fixed;
+}
+
+//Responsive Spacing
+//Format e.g.: m-t-2-xs
+
+
+  @each $prop, $abbrev in (margin: m, padding: p) {
+    @each $size, $lengths in $spacers {
+      $length-x:   map-get($lengths, x);
+      $length-y:   map-get($lengths, y);
+
+      @media (max-width: 543px) {
+        .#{$abbrev}-a-#{$size}-xs { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .#{$abbrev}-t-#{$size}-xs { #{$prop}-top:    $length-y !important; }
+        .#{$abbrev}-r-#{$size}-xs { #{$prop}-right:  $length-x !important; }
+        .#{$abbrev}-b-#{$size}-xs { #{$prop}-bottom: $length-y !important; }
+        .#{$abbrev}-l-#{$size}-xs { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .#{$abbrev}-x-#{$size}-xs {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+        .#{$abbrev}-y-#{$size}-xs {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+      }
+      @media (min-width: 544px) {
+        .#{$abbrev}-a-#{$size}-sm { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .#{$abbrev}-t-#{$size}-sm { #{$prop}-top:    $length-y !important; }
+        .#{$abbrev}-r-#{$size}-sm { #{$prop}-right:  $length-x !important; }
+        .#{$abbrev}-b-#{$size}-sm { #{$prop}-bottom: $length-y !important; }
+        .#{$abbrev}-l-#{$size}-sm { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .#{$abbrev}-x-#{$size}-sm {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+        .#{$abbrev}-y-#{$size}-sm {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+      }
+      @media (min-width: 768px) {
+        .#{$abbrev}-a-#{$size}-md { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .#{$abbrev}-t-#{$size}-md { #{$prop}-top:    $length-y !important; }
+        .#{$abbrev}-r-#{$size}-md { #{$prop}-right:  $length-x !important; }
+        .#{$abbrev}-b-#{$size}-md { #{$prop}-bottom: $length-y !important; }
+        .#{$abbrev}-l-#{$size}-md { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .#{$abbrev}-x-#{$size}-md {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+        .#{$abbrev}-y-#{$size}-md {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+      }
+      @media (min-width: 992px) {
+        .#{$abbrev}-a-#{$size}-lg { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .#{$abbrev}-t-#{$size}-lg { #{$prop}-top:    $length-y !important; }
+        .#{$abbrev}-r-#{$size}-lg { #{$prop}-right:  $length-x !important; }
+        .#{$abbrev}-b-#{$size}-lg { #{$prop}-bottom: $length-y !important; }
+        .#{$abbrev}-l-#{$size}-lg { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .#{$abbrev}-x-#{$size}-lg {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+        .#{$abbrev}-y-#{$size}-lg {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+      }
+      @media (min-width: 1200px) {
+        .#{$abbrev}-a-#{$size}-xl { #{$prop}:        $length-y $length-x !important; } // a = All sides
+        .#{$abbrev}-t-#{$size}-xl { #{$prop}-top:    $length-y !important; }
+        .#{$abbrev}-r-#{$size}-xl { #{$prop}-right:  $length-x !important; }
+        .#{$abbrev}-b-#{$size}-xl { #{$prop}-bottom: $length-y !important; }
+        .#{$abbrev}-l-#{$size}-xl { #{$prop}-left:   $length-x !important; }
+
+        // Axes
+        .#{$abbrev}-x-#{$size}-xl {
+          #{$prop}-right:  $length-x !important;
+          #{$prop}-left:   $length-x !important;
+        }
+        .#{$abbrev}-y-#{$size}-xl {
+          #{$prop}-top:    $length-y !important;
+          #{$prop}-bottom: $length-y !important;
+        }
+      }
+    }
+  }

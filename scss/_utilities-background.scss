@@ -1,0 +1,94 @@
+//
+// Contextual backgrounds
+//
+
+// Inverse
+// TODO: redo this as a proper class
+.bg-inverse {
+  color: $gray-lighter;
+  background-color: $gray-dark;
+}
+
+.bg-faded {
+  background-color: $gray-lightest;
+}
+
+.bg-nav-transparent {
+  background-color: none;
+}
+
+.bg-light-grey {
+  background-color: $section-bg-gray-light;
+}
+
+.bg-lightest-grey {
+  background-color: $section-bg-gray-lightest;
+}
+
+.bg-light-blue {
+  background-color: $section-bg-blue-light;
+}
+
+@include bg-variant('.bg-primary', $brand-primary);
+
+@include bg-variant('.bg-success', $brand-success);
+
+@include bg-variant('.bg-info', $brand-info);
+
+@include bg-variant('.bg-warning', $brand-warning);
+
+@include bg-variant('.bg-danger', $brand-danger);
+
+//Background section images
+.bg-light-blue-dd {
+  position: relative;
+  display: block;
+  background-color: $section-bg-blue-light;
+  z-index: 100;
+  width: 100%;
+  //DroneDeploy icon bg large on app page
+  &:after{
+    position: absolute;
+    content: "";
+    background-image: url(../../img/bg-dd-icon.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+    top: 0; right:0; bottom:0;
+    width: 100%;
+    max-width:1200px;
+    opacity: .10;
+  }
+}
+
+//Background for adding foreground images
+//Placeholder for -z index of background
+%background-z {
+  position: relative;
+  display:block;
+  width: 100%;
+}
+//Foreground image
+%foreground-z {
+  position: absolute;
+  content:"";
+}
+
+
+//class blue and purple gradient with topography pattern image on the foreground
+.brackground-blue-purple-z {
+  @extend %background-z;
+  background: rgb(69,199,250); /* Old browsers */
+  background: linear-gradient(to bottom,  rgba(69,199,250,1) 0%,rgba(149,117,205,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  z-index:10;
+
+  &:after {
+    @extend %foreground-z;
+    background-image: url(../../img/topography-pattern.svg);
+    background-size:auto;
+    background-repeat: repeat;
+    top: 0; right:0; bottom:0; left:0;
+    z-index:-1;
+    opacity:.8;
+  }
+}

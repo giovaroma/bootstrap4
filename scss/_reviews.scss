@@ -1,0 +1,14 @@
+
+.review-stars {
+  ul {
+    padding:0;
+    margin:0;
+  }
+  ul > li {
+    display: inline-block;
+    background-image: url('../../img/star.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+}
