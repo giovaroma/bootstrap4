@@ -69,3 +69,55 @@
     flex-wrap:wrap;
   }
 }
+
+
+//Breakpoints used to import from CSS to Javascript
+//https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
+// body:before {
+//   display:none;
+// }
+// @media (min-width: 0px){
+//   body:before {
+//     content:"sm";
+//   }
+// }
+// @media (min-width: 768px) {
+//   body:before {
+//     content:"md";
+//   }
+// }
+// @media (min-width: 992px) {
+//   body:before {
+//     content:"lg";
+//   }
+// }
+// @media (min-width: 1200px) {
+//   body:before {
+//     content:"xl";
+//   }
+// }
+
+//Breaky break points
+html:before {
+	content: "mobile,tablet,desktop";
+	display: none;
+}
+
+body:before {
+	display: none;
+}
+@media (min-width: 300px) {
+	body:before {
+		content: "mobile";
+	}
+}
+@media (min-width: 768px) {
+	body:before {
+		content: "tablet";
+	}
+}
+@media (min-width: 992px) {
+	body:before {
+		content: "desktop";
+	}
+}

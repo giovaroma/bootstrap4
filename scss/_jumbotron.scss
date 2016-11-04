@@ -66,6 +66,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c7fa', endColorstr='#1976d2',GradientType=0 ); /* IE6-9 */
 }
 
+.jumbotron-purple-blue-gradient {
+  background: rgb(100,36,168); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(100,36,168,1) 0%, rgba(25,118,210,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(100,36,168,1) 0%,rgba(25,118,210,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(100,36,168,1) 0%,rgba(25,118,210,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6424a8', endColorstr='#1976d2',GradientType=0 ); /* IE6-9 */
+}
+
 
 .jumbotron-hr {
   border-top-color: darken($jumbotron-bg, 10%);
@@ -128,27 +136,55 @@
   }
 }
 
+.jumbotron-img-ipad-gravity {
+  position:relative;
+  @include media-breakpoint-up(xs) {
+    max-width: 300px;
+    left: 60px; top: 30px;
+  }
+  @include media-breakpoint-up(sm) {
+    max-width: 440px;
+    top: 50px; left:80px;
+  }
+  @include media-breakpoint-up(md) {
+    max-width: 520px;
+    top:30px; left:160px;
+  }
+  @include media-breakpoint-up(lg) {
+    position:absolute;
+    top: -20px;
+    left:0px;
+    max-width: 630px;
+  }
+  @include media-breakpoint-up(xl) {
+    top: -68px;
+    left:30px;
+    max-width: 630px;
+  }
+}
+
 //Set a max width for iPhones on Index
 .jumbotron-img-processor {
 
   @include media-breakpoint-up(xs) {
-    max-width: 300px;
+    max-width: 170px;
   }
   @include media-breakpoint-up(sm) {
-    max-width: 500px;
+    max-width: 180px;
   }
   @include media-breakpoint-up(md) {
-    max-width: 680px;
+    max-width: 200px;
+    margin: 0 auto;
   }
   @include media-breakpoint-up(lg) {
     position:absolute;
-    top: 40px;
-    left:-44px;
-    max-width: 240px;
+    top: 10px;
+    left: 90px;
+    max-width: 210px;
   }
   @include media-breakpoint-up(xl) {
     position:absolute;
-    top: 30px;
+    top: 10px;
     left:100px;
     max-width: 214px;
   }
@@ -176,4 +212,6 @@
   //Application page background
   .bg-appStore {
     background-image: url('../img/bg-developer.jpg');
+    background-repeat:repeat-x;
+    background-size:cover;
   }
