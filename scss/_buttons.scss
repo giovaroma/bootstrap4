@@ -76,6 +76,10 @@ fieldset[disabled] a.btn {
 }
 .btn-accent {
   @include button-variant($white, $btn-accent-bg, $btn-accent-bg);
+  @include media-breakpoint-down(xs) {
+    max-width: 170px;
+    margin-top: 1rem;
+  }
 }
 .btn-app-dark {
   @include button-variant($white, $btn-app-bg, $btn-app-border);
@@ -89,6 +93,13 @@ fieldset[disabled] a.btn {
 }
 .btn-secondary-outline {
   @include button-outline-variant($btn-secondary-border);
+  &:hover {
+    background: none !important;
+  }
+  @include media-breakpoint-down(xs) {
+    max-width: 170px;
+    margin-top:1rem;
+  }
 }
 .btn-info-outline {
   @include button-outline-variant($btn-info-bg);
