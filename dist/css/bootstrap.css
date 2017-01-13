@@ -2881,6 +2881,16 @@ input[type="checkbox"].disabled {
   font-weight: 300;
 }
 
+.form-landing-page {
+  position: absolute;
+  top: -500px;
+  z-index: 100;
+  width: 85%;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 5px;
+}
+
 .btn {
   display: inline-block;
   padding: .375rem 1rem;
