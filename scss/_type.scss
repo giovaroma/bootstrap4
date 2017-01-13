@@ -199,12 +199,50 @@ mark,
   text-transform: uppercase;
 }
 
-// Blockquotes
-.blockquote {
-  padding: ($spacer / 2) $spacer;
-  margin-bottom: $spacer;
-  font-size: $blockquote-font-size;
-  border-left: .25rem solid $blockquote-border-color;
+//contains the testimonial for the quote background
+.testimonial {
+  position: relative;
+  z-index: 1;
+
+  // Blockquotes
+  .blockquote {
+    padding: ($spacer / 2) $spacer;
+    margin-bottom: $spacer;
+    font-size: $blockquote-font-size;
+    border-left: .25rem solid $blockquote-border-color;
+    letter-spacing: .03rem;
+
+    //Custom G
+    &::before {
+      position: absolute;
+      top: -20px; left: 20px;
+      width: 84px;
+      height: 74px;
+      content: '';
+      opacity: .05;
+      background: url('../img/quote-open-mark.svg') top right no-repeat;
+      background-size: 100%;
+    }
+    &::after {
+      position: absolute;
+      top: 0; right: -30px;
+      width: 84px;
+      height: 100%;
+      content: '';
+      opacity: 1;
+      border-right: .05rem solid rgba(0,0,0,.12);
+      background-size: 100%;
+    }
+  } //blockquote
+  .blockquote-connect  {
+    &::before {
+      position:absolute;
+      top:0; right: 0;
+      width:200px;
+      height:5px;
+      border-bottom: .05rem solid rgba(0,0,0,.12);
+    }
+  }
 }
 
 .blockquote-footer {
@@ -212,6 +250,7 @@ mark,
   font-size: 80%; // back to default font-size
   line-height: $line-height;
   color: $blockquote-small-color;
+
 
   &::before {
     content: "\2014 \00A0"; // em dash, nbsp

@@ -121,3 +121,21 @@ body:before {
 		content: "desktop";
 	}
 }
+
+//Placeholder for using flexbox
+%flex {
+	display: flex;
+}
+//Assign classes at the row level
+.align-items-center {
+
+	align-items: center;
+}
+
+.align-items-start {
+	align-items: flex-start;
+}
+
+.align-items-end {
+	align-items: flex-end;
+}
