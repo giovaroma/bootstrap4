@@ -8,7 +8,9 @@
 // Variables
 //
 
-
+@at-root {
+  @-ms-viewport { width: device-width; }
+}
 // Grid breakpoints
 //
 // Define the minimum and maximum dimensions at which your layout will change,

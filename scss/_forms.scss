@@ -450,3 +450,14 @@ input[type="checkbox"] {
     }
   }
 }
+
+//Form Shadow for landing pages
+.form-shadow {
+  -webkit-box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
+  -moz-box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
+  box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
+}
+
+.form-control {
+  font-weight: 300;
+}
