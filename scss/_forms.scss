@@ -456,18 +456,43 @@ input[type="checkbox"] {
   -webkit-box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
   -moz-box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
   box-shadow: 15px 15px 120px -16px rgba(158,158,158,1);
+  @include media-breakpoint-down(sm) {
+    box-shadow: none;
+  }
 }
 
 .form-control {
   font-weight: 300;
 }
 
+//Form Landing Page
 .form-landing-page {
-  position: absolute;
-  top: -500px;
   z-index:100;
-  background-color: white;
   padding: 1rem;
   border-radius: 5px;
   width: 85%;
+  @include media-breakpoint-up(xs) {
+    width: 100%;
+    position: static;
+    background-color:none;
+  }
+  @include media-breakpoint-up(sm) {
+    width: 100%;
+    position: static;
+    background-color: none;
+  }
+  @include media-breakpoint-up(md) {
+    position: absolute;
+    width:100%;
+    top:-500px;
+    background-color:white;
+  }
+  @include media-breakpoint-up(lg) {
+    position: absolute;
+    width: 85%;
+  }
+  @include media-breakpoint-up(xl) {
+    position: absolute;
+    width: 85%
+  }
 }

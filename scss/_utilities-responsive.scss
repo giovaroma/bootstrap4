@@ -122,13 +122,16 @@ body:before {
 	}
 }
 
+.center {
+  margin: 0 auto;
+}
+
 //Placeholder for using flexbox
 %flex {
 	display: flex;
 }
 //Assign classes at the row level
 .align-items-center {
-
 	align-items: center;
 }
 
@@ -138,4 +141,41 @@ body:before {
 
 .align-items-end {
 	align-items: flex-end;
+}
+
+//Set the order of sections for flipping content
+.order-first-sm-down {
+  @include media-breakpoint-up(xs) {
+    order: 1;
+  }
+  @include media-breakpoint-up(sm) {
+    order: 1;
+  }
+  @include media-breakpoint-up(md) {
+    order: 2;
+  }
+  @include media-breakpoint-up(lg) {
+    order: 2;
+  }
+  @include media-breakpoint-up(xl) {
+    order: 2;
+  }
+}
+
+.order-last-sm-down {
+  @include media-breakpoint-up(xs) {
+    order: 2;
+  }
+  @include media-breakpoint-up(sm) {
+    order: 2;
+  }
+  @include media-breakpoint-up(md) {
+    order: 1;
+  }
+  @include media-breakpoint-up(lg) {
+    order: 1;
+  }
+  @include media-breakpoint-up(xl) {
+    order: 1;
+  }
 }
