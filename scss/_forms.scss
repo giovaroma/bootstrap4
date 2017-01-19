@@ -486,7 +486,7 @@
   @include media-breakpoint-up(md) {
     position: absolute;
     width:100%;
-    top:-490px;
+    top:-540px;
     background-color:white;
   }
   @include media-breakpoint-up(lg) {
@@ -616,7 +616,7 @@ textarea.materialize-textarea {
     display: block;
     content: "";
     position: absolute;
-    top: 54px;
+    top: 60px;
     opacity: 0;
     transition: .2s opacity ease-out, .2s color ease-out;
   }
@@ -649,12 +649,12 @@ textarea.materialize-textarea {
   }
   //verticl margin for input fields
   position: relative;
-  margin-top: .4rem;
+  margin-top: .8rem;
 
   label {
     color: #9e9e9e;
     position: absolute;
-    top: 0.8rem;
+    top: 0.5rem;
     left: 0;
     font-size: 1rem;
     cursor: text;
