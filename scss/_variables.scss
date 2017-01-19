@@ -754,6 +754,8 @@ $pre-color:                   $gray-dark !default;
 $pre-border-color:            #ccc !default;
 $pre-scrollable-max-height:   340px !default;
 
+
+//Materialize CSS Variables Start
 // Z-levels
 .z-depth-0 {
   box-shadow: none !important;
@@ -776,3 +778,44 @@ $pre-scrollable-max-height:   340px !default;
 .z-depth-5{
   box-shadow: 0 27px 24px 0 rgba(0, 0, 0, 0.2), 0 40px 77px 0 rgba(0, 0, 0, 0.22);
 }
+
+//MD Form
+$error-color: #d50000;
+$success-color: teal;
+$secondary-color: $brand-primary;
+$link-color: $brand-primary;
+$off-black: rgba(0, 0, 0, 0.87) !default;
+
+$placeholder-text-color: $input-border-color !default;
+$input-border-color: rgba(0,0,0,.20) !default;
+$input-border: 1px solid $input-border-color !default;
+$input-height: 3rem !default;
+$input-background: #fff !default;
+$input-error-color: $error-color !default;
+$input-success-color: $success-color !default;
+$input-focus-color: $secondary-color !default;
+$input-font-size: 1rem !default;
+$input-margin: 0 0 20px 0 !default;
+$input-padding: 0 !default;
+$input-transition: all .3s !default;
+$label-font-size: .8rem !default;
+$input-disabled-color: rgba(0,0,0, .26) !default;
+$input-disabled-solid-color: #BDBDBD !default;
+$input-disabled-border: 1px dotted $input-disabled-color !default;
+$input-invalid-border: 1px solid $input-error-color !default;
+$placeholder-text-color: lighten($input-border-color, 20%) !default;
+
+// Dropdown
+// ==========================================================================
+
+$dropdown-bg-color: #fff !default;
+$dropdown-hover-bg-color: #eee !default;
+$dropdown-color: $secondary-color !default;
+$dropdown-item-height: 50px !default;
+
+$select-border: 1px solid #f2f2f2 !default;
+$select-background: rgba(255, 255, 255, 0.90) !default;
+$select-focus: 1px solid rgba(255, 255, 255, 0.40) !default;
+$select-padding: 5px !default;
+$select-radius: 2px !default;
+$select-disabled-color: rgba(0,0,0,.3) !default;
