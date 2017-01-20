@@ -5285,7 +5285,7 @@ input[type="button"].btn-block {
   }
   #top {
     position: relative;
-    z-index: 100;
+    z-index: 1000;
     height: 0;
     color: #fff;
     background: none;
@@ -10939,8 +10939,31 @@ body:before {
   }
 }
 
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-block-flex {
+  display: inline-block-flex;
+}
+
 .center-align {
   margin: 0 auto;
+}
+
+.align-items-center,
+.align-items-start,
+.align-items-end,
+.align-items-end-center,
+.align-space-between {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
 }
 
 .align-items-center {
@@ -10949,6 +10972,10 @@ body:before {
   -ms-flex-align: center;
   -ms-grid-row-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .align-items-start {
@@ -10957,6 +10984,10 @@ body:before {
   -ms-flex-align: start;
   -ms-grid-row-align: flex-start;
           align-items: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .align-items-end {
@@ -10965,6 +10996,34 @@ body:before {
   -ms-flex-align: end;
   -ms-grid-row-align: flex-end;
           align-items: flex-end;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-items-end-center {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+  -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-space-between {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .order-first-sm-down {

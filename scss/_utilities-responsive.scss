@@ -97,7 +97,7 @@
 //   }
 // }
 
-//Breaky break points
+//Breaky break points for mobile footer collapse menus
 html:before {
 	content: "mobile,tablet,desktop";
 	display: none;
@@ -122,26 +122,63 @@ body:before {
 	}
 }
 
+//Alignment Classes
+.inline {
+  display:inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-block-flex {
+  display: inline-block-flex;
+}
+
 .center-align {
   margin: 0 auto;
 }
 
 //Placeholder for using flexbox
-%flex {
-	display: flex;
+.align-items-center,
+.align-items-start,
+.align-items-end,
+.align-items-end-center,
+.align-space-between {
+  display: flex;
 }
 //Assign classes at the row level
 .align-items-center {
+
 	align-items: center;
+  justify-content: center;
 }
 
 .align-items-start {
+
 	align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .align-items-end {
+
 	align-items: flex-end;
+  justify-content: flex-end;
 }
+
+.align-items-end-center {
+
+	align-items: center;
+  justify-content: flex-end;
+}
+
+.align-space-between {
+
+  align-items:center;
+  justify-content: space-between;
+}
+
+
 
 //Set the order of sections for flipping content
 .order-first-sm-down {
