@@ -6246,6 +6246,31 @@ a.label:focus, a.label:hover {
   opacity: .30;
 }
 
+.jumbotron-img-bg-construction {
+  position: relative;
+  z-index: 100;
+  display: block;
+  background-image: url("../img/construction-landing-hero-lg.jpg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-background-size: cover;
+          background-size: cover;
+}
+
+.jumbotron-img-bg-construction:after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background-color: #3f51b5;
+  opacity: .50;
+}
+
 .alert {
   padding: 15px;
   margin-bottom: 1rem;
