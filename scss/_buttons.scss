@@ -88,9 +88,9 @@ fieldset[disabled] a.btn {
 //classes below starting at btnaccent
 .jumbotron-xsm, .jumbotron-lg {
   .btn-secondary-outline {
-    @include button-outline-variant($btn-secondary-border);
+    border: solid 1px white;
     &:hover {
-      background: none !important;
+      background-color: none !important;
     }
     @include media-breakpoint-down(xs) {
       max-width: 170px;
@@ -119,7 +119,13 @@ fieldset[disabled] a.btn {
 }
 
 .btn-secondary-outline {
-  @include button-outline-variant($btn-secondary-border);
+  border: 1px solid white;
+  background-color: none;
+  color:white;
+  &:hover {
+    background-color:none;
+    color: white;
+  }
 }
 .btn-info-outline {
   @include button-outline-variant($btn-info-bg);
