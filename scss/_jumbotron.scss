@@ -259,3 +259,25 @@
       opacity: .50;
     }
   }
+
+  //DSP Landing Page
+  .jumbotron-img-bg-dsp {
+    position:relative;
+    display:block; //Need to check what it does
+    background-image:url('../img/dsp-hero-signup.jpg');
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index:100;
+
+    &:after {
+      position: absolute;
+      content: "";
+      background-color: #3f51b5;
+      height: 100%;
+      z-index: -1;
+      top: 0; right: 0; bottom: 0; left: 0;
+      width: 100%;
+      opacity: .50;
+    }
+  }
