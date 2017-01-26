@@ -6181,7 +6181,8 @@ a.label:focus, a.label:hover {
 
 .jumbotron-img-bg-ag,
 .jumbotron-img-bg-construction,
-.jumbotron-img-bg-dsp {
+.jumbotron-img-bg-dsp,
+.jumbotron-img-bg-agMain {
   position: relative;
   z-index: 100;
   display: block;
