@@ -11,6 +11,11 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
 h1 { font-size: $font-size-h1; }
 h2 { font-size: $font-size-h2; }
 h3 { font-size: $font-size-h3; }
@@ -294,4 +299,35 @@ mark,
 //underline text class
 .underline {
   text-decoration: underline;
+}
+
+//Link with blue rectangle to the left
+.md-link-blue {
+  &::before {
+    content:"";
+    display:inline-block;
+    width:4px;
+    height:1.25rem;
+    background-color: $brand-primary;
+    margin-right:8px;
+  }
+  &:hover {
+    color:#1976d2;
+  }
+}
+
+//Narrow arrow for <li>
+
+.arrow-list {
+  display:inline;
+  vertical-align:middle;
+}
+.arrow-white-after::after {
+  display: inline-block;
+  content:"";
+  background-image: url(../img/narrow-arrow.svg);
+  background-size: 7px 13px;
+  width: 7px;
+  height:13px;
+  vertical-align:middle;
 }
