@@ -11,6 +11,10 @@ h1, h2, h3, h4, h5, h6,
   color: $headings-color;
 }
 
+p {
+  letter-spacing: .03rem;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
@@ -280,6 +284,8 @@ mark,
   }
 }
 
+
+
 //White arrow::after
 .arrow {
   display:inline;
@@ -301,7 +307,7 @@ mark,
   text-decoration: underline;
 }
 
-//Link with blue rectangle to the left
+//MD Link with blue rectangle to the left
 .md-link-blue {
   &::before {
     content:"";
@@ -316,18 +322,18 @@ mark,
   }
 }
 
-//Narrow arrow for <li>
-
-.arrow-list {
-  display:inline;
-  vertical-align:middle;
-}
-.arrow-white-after::after {
-  display: inline-block;
-  content:"";
-  background-image: url(../img/narrow-arrow.svg);
-  background-size: 7px 13px;
-  width: 7px;
-  height:13px;
-  vertical-align:middle;
+//Checkmark list
+.list-checkmark {
+  &:before {
+    position:relative;
+    top:-3px;
+    display: inline-block;
+    margin-right:.5rem;
+    content:"";
+    background-image: url(../img/checkmark-circle.svg);
+    background-size: 20px 20px;
+    width: 20px;
+    height:20px;
+    vertical-align:middle;
+  }
 }

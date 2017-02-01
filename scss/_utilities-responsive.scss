@@ -145,8 +145,7 @@ body:before {
 .align-items-end,
 .align-items-end-center,
 .align-space-between,
-.align-items-start-center,
-.align-items-column-end {
+.align-items-start-center {
   display: flex;
 }
 
@@ -190,13 +189,9 @@ body:before {
 }
 
 //Vertical Flex Alignment
-
-.align-items-column-end {
-  flex-direction:column;
-  align-items: flex-end;
-  justify-content: flex-end;
+.flex-direction-column {
+  flex-direction: column;
 }
-
 
 
 //Set the order of sections for flipping content

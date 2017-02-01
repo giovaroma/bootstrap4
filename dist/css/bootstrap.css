@@ -563,6 +563,10 @@ h1, h2, h3, h4, h5, h6,
   color: inherit;
 }
 
+p {
+  letter-spacing: .03rem;
+}
+
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -885,20 +889,18 @@ mark,
   color: #1976d2;
 }
 
-.arrow-list {
-  display: inline;
-  vertical-align: middle;
-}
-
-.arrow-white-after::after {
+.list-checkmark:before {
+  position: relative;
+  top: -3px;
   display: inline-block;
-  width: 7px;
-  height: 13px;
+  width: 20px;
+  height: 20px;
+  margin-right: .5rem;
   vertical-align: middle;
   content: "";
-  background-image: url(../img/narrow-arrow.svg);
-  -webkit-background-size: 7px 13px;
-          background-size: 7px 13px;
+  background-image: url(../img/checkmark-circle.svg);
+  -webkit-background-size: 20px 20px;
+          background-size: 20px 20px;
 }
 
 .img-fluid, .carousel-inner > .carousel-item > img,
@@ -11023,8 +11025,7 @@ body:before {
 .align-items-end,
 .align-items-end-center,
 .align-space-between,
-.align-items-start-center,
-.align-items-column-end {
+.align-items-start-center {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -11103,22 +11104,13 @@ body:before {
           justify-content: space-between;
 }
 
-.align-items-column-end {
+.flex-direction-column {
           flex-direction: column;
 
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
-  -webkit-box-align: end;
-  -webkit-align-items: flex-end;
-  -ms-flex-align: end;
-  -ms-grid-row-align: flex-end;
-          align-items: flex-end;
-  -webkit-box-pack: end;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 
 .order-first-sm-down {
@@ -11205,6 +11197,10 @@ body:before {
     -ms-flex-order: 1;
             order: 1;
   }
+}
+
+.rounded-circle {
+  border-radius: 50%;
 }
 
 @media (min-width: 1200px) {
@@ -11973,5 +11969,16 @@ iframe[name='google_conversion_frame'] {
     width: 140px;
     min-width: 140px;
   }
+}
+
+.software-circles {
+  position: relative;
+  width: 46px;
+  height: 46px;
+  background-color: white;
+}
+
+.software-icon-container {
+  max-width: 520px;
 }
 /*# sourceMappingURL=bootstrap.css.map */
