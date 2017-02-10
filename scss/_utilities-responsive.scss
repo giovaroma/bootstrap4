@@ -153,7 +153,6 @@ body:before {
 
 //Assign classes at the row level
 .align-items-center {
-
 	align-items: center;
   justify-content: center;
 }
@@ -191,42 +190,4 @@ body:before {
 //Vertical Flex Alignment
 .flex-direction-column {
   flex-direction: column;
-}
-
-
-//Set the order of sections for flipping content
-.order-first-sm-down {
-  @include media-breakpoint-up(xs) {
-    order: 1;
-  }
-  @include media-breakpoint-up(sm) {
-    order: 1;
-  }
-  @include media-breakpoint-up(md) {
-    order: 2;
-  }
-  @include media-breakpoint-up(lg) {
-    order: 2;
-  }
-  @include media-breakpoint-up(xl) {
-    order: 2;
-  }
-}
-
-.order-last-sm-down {
-  @include media-breakpoint-up(xs) {
-    order: 2;
-  }
-  @include media-breakpoint-up(sm) {
-    order: 2;
-  }
-  @include media-breakpoint-up(md) {
-    order: 1;
-  }
-  @include media-breakpoint-up(lg) {
-    order: 1;
-  }
-  @include media-breakpoint-up(xl) {
-    order: 1;
-  }
 }

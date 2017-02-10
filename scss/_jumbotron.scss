@@ -219,7 +219,8 @@
   .jumbotron-img-bg-ag,
   .jumbotron-img-bg-construction,
   .jumbotron-img-bg-dsp,
-  .jumbotron-img-bg-agMain {
+  .jumbotron-img-bg-agMain,
+  .jumbotron-img-bg-nh {
     position:relative;
     display:block;
     background-position: top center;
@@ -228,19 +229,26 @@
     z-index:100;
   }
 
+  .jumbotron-img-bg-ag:after,
+  .jumbotron-img-bg-construction:after,
+  .jumbotron-img-bg-dsp:after,
+  .jumbotron-img-bg-agMain:after,
+  .jumbotron-img-bg-nh:after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    z-index: -1;
+    top: 0; right: 0; bottom: 0; left: 0;
+    width: 100%;
+  }
+
 
   //Ag Landing Page
   .jumbotron-img-bg-ag {
     background-image:url('../img/ag-landing-hero-lg.jpg');
 
     &:after {
-      position: absolute;
-      content: "";
       background-color: black;
-      height: 100%;
-      z-index: -1;
-      top: 0; right: 0; bottom: 0; left: 0;
-      width: 100%;
       opacity: .30;
     }
   }
@@ -250,13 +258,7 @@
     background-image:url('../img/construction-landing-hero-lg.jpg');
 
     &:after {
-      position: absolute;
-      content: "";
       background-color: #3f51b5;
-      height: 100%;
-      z-index: -1;
-      top: 0; right: 0; bottom: 0; left: 0;
-      width: 100%;
       opacity: .50;
     }
   }
@@ -266,13 +268,7 @@
     background-image:url('../img/dsp-hero-signup.jpg');
 
     &:after {
-      position: absolute;
-      content: "";
       background-color: #3f51b5;
-      height: 100%;
-      z-index: -1;
-      top: 0; right: 0; bottom: 0; left: 0;
-      width: 100%;
       opacity: .50;
     }
   }
@@ -282,14 +278,18 @@
     background-image:url('../img/ag-soy-hero.jpg');
 
     &:after {
-      position: absolute;
-      content: "";
-      // background-color: #3f51b5;
       background: radial-gradient(to top left, circle, rgba(48,35,174,0.39) 0%, #0F0810 100%);
-      height: 100%;
-      z-index: -1;
-      top: 0; right: 0; bottom: 0; left: 0;
-      width: 100%;
       opacity: .95;
     }
   }
+
+  //////CNH Backgrounds
+  .jumbotron-img-bg-nh {
+    background-image:url('../img/nh-hero.jpg');
+
+    &:after {
+      background: black;
+      opacity: .3;
+    }
+  }
+  //////End CNH Background
