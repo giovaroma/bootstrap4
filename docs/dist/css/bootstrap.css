@@ -3754,6 +3754,38 @@ fieldset[disabled] a.btn {
   border-color: #eba5a3;
 }
 
+.btn-white-outline {
+  color: white;
+  background-color: transparent;
+  background-image: none;
+  border-color: white;
+}
+
+.btn-white-outline:focus, .btn-white-outline.focus, .btn-white-outline:active, .btn-white-outline.active,
+.open > .btn-white-outline.dropdown-toggle {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-white-outline:hover {
+  color: #fff;
+  background-color: white;
+  border-color: white;
+}
+
+.btn-white-outline.disabled:focus, .btn-white-outline.disabled.focus, .btn-white-outline:disabled:focus, .btn-white-outline:disabled.focus {
+  border-color: white;
+}
+
+.btn-white-outline.disabled:hover, .btn-white-outline:disabled:hover {
+  border-color: white;
+}
+
+.btn-white-outline:hover {
+  background: none;
+}
+
 .btn-link {
   font-weight: normal;
   color: #2196f3;
@@ -6289,12 +6321,12 @@ a.label:focus, a.label:hover {
 }
 
 .jumbotron-img-bg-nh {
-  background-image: url("../img/nh-hero.jpg");
+  background-image: url("../img/nh-hero-tractor.jpg");
 }
 
 .jumbotron-img-bg-nh:after {
   background: black;
-  opacity: .3;
+  opacity: .5;
 }
 
 .alert {
