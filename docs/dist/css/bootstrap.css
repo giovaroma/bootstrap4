@@ -6256,7 +6256,8 @@ a.label:focus, a.label:hover {
 .jumbotron-img-bg-construction,
 .jumbotron-img-bg-dsp,
 .jumbotron-img-bg-agMain,
-.jumbotron-img-bg-nh {
+.jumbotron-img-bg-nh,
+.jumbotron-img-bg-caseih {
   position: relative;
   z-index: 100;
   display: block;
@@ -6270,7 +6271,8 @@ a.label:focus, a.label:hover {
 .jumbotron-img-bg-construction:after,
 .jumbotron-img-bg-dsp:after,
 .jumbotron-img-bg-agMain:after,
-.jumbotron-img-bg-nh:after {
+.jumbotron-img-bg-nh:after,
+.jumbotron-img-bg-caseih:after {
   position: absolute;
   top: 0;
   right: 0;
@@ -6326,7 +6328,16 @@ a.label:focus, a.label:hover {
 
 .jumbotron-img-bg-nh:after {
   background: black;
-  opacity: .7;
+  opacity: .6;
+}
+
+.jumbotron-img-bg-caseih {
+  background-image: url("../img/nh-hero.jpg");
+}
+
+.jumbotron-img-bg-caseih:after {
+  background: black;
+  opacity: .2;
 }
 
 .alert {
