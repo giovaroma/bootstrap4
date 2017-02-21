@@ -6323,21 +6323,24 @@ a.label:focus, a.label:hover {
 }
 
 .jumbotron-img-bg-nh {
-  background-image: url("../img/nh-hero-tractor.jpg");
+  background-image: url("../img/nh-hero.jpg");
 }
 
 .jumbotron-img-bg-nh:after {
   background: black;
+  background: -webkit-radial-gradient(bottom right, circle, rgba(48, 35, 174, .39) 0%, #0f0810 100%);
+  background:      -o-radial-gradient(bottom right, circle, rgba(48, 35, 174, .39) 0%, #0f0810 100%);
+  background:         radial-gradient(to top left, circle, rgba(48, 35, 174, .39) 0%, #0f0810 100%);
   opacity: .6;
 }
 
 .jumbotron-img-bg-caseih {
-  background-image: url("../img/nh-hero.jpg");
+  background-image: url("../img/caseih-hero.jpg");
 }
 
 .jumbotron-img-bg-caseih:after {
   background: black;
-  opacity: .6;
+  opacity: .2;
 }
 
 .alert {

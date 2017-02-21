@@ -287,20 +287,21 @@
 
   //////CNH Backgrounds
   .jumbotron-img-bg-nh {
-    background-image:url('../img/nh-hero-tractor.jpg');
+    background-image:url('../img/nh-hero.jpg');
 
     &:after {
       background: black;
+      background: radial-gradient(to top left, circle, rgba(48,35,174,0.39) 0%, #0F0810 100%);
       opacity: .6;
     }
   }
 
   .jumbotron-img-bg-caseih {
-    background-image:url('../img/nh-hero.jpg');
+    background-image:url('../img/caseih-hero.jpg');
 
     &:after {
       background: black;
-      opacity: .6;
+      opacity: .2;
     }
   }
   //////End CNH Background
