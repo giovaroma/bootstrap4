@@ -11040,22 +11040,6 @@ body:before {
   }
 }
 
-.inline {
-  display: inline;
-}
-
-.inline-block {
-  display: inline-block;
-}
-
-.inline-block-flex {
-  display: inline-block-flex;
-}
-
-.center-align {
-  margin: 0 auto;
-}
-
 .align-items-center,
 .align-items-start,
 .align-items-end,
@@ -11151,6 +11135,30 @@ body:before {
 
 .rounded-circle {
   border-radius: 50%;
+}
+
+.overflow-h {
+  overflow: hidden;
+}
+
+.inline {
+  display: inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-block-flex {
+  display: inline-block-flex;
+}
+
+.center-align {
+  margin: 0 auto;
+}
+
+.overflow-img {
+  width: 49%;
 }
 
 @media (min-width: 1200px) {

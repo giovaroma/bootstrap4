@@ -4,3 +4,31 @@
 .rounded-circle {
   border-radius: 50%;
 }
+
+//Alignment Classes
+
+.overflow-h {
+  overflow:hidden;
+}
+
+.inline {
+  display:inline;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline-block-flex {
+  display: inline-block-flex;
+}
+
+.center-align {
+  margin: 0 auto;
+}
+
+
+.overflow-img{
+  //Make the width of the columns 49% to prevent the image from wrapping to next row
+  width:49%;
+}
