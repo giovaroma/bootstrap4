@@ -41,6 +41,7 @@
       color: $color;
       background-color: darken($background, 17%);
           border-color: darken($border, 25%);
+          @extend .z-depth-1;
     }
   }
 

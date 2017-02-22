@@ -226,7 +226,7 @@ input[type="button"] {
   }
 }
 
-
+//CUSTOM CSS FOR iOS and Android Buttons
 .btn-app-container {
   //adjustments to margin due to scale()
   @include media-breakpoint-up(xs) {
@@ -348,3 +348,10 @@ input[type="button"] {
     }
   }
 } //end btn-app
+
+//Buttons Typography Variants
+
+//Main CTA Type
+.letter-s {
+  letter-spacing: .1rem;
+}
