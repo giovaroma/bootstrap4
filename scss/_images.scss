@@ -51,3 +51,34 @@
   font-size: 90%;
   color: $gray-light;
 }
+
+
+//CUSTOM BELOW
+
+//Overflowing images responsive points
+@include media-breakpoint-up(xs) {
+  .img-fluid-overflow {
+    width:100%;
+    min-width:544px;
+  }
+}//xs
+@include media-breakpoint-up(sm) {
+  .img-fluid-overflow {
+    width:100%;
+    min-width:544px;
+  }
+}//sm
+@include media-breakpoint-up(md) {
+  .img-fluid-overflow {
+    width:auto;
+  }
+}// md
+@include media-breakpoint-up(lg) {
+  .img-fluid-overflow {
+    width:auto;
+  }
+}// lg
+
+.img-fluid-overflow {
+
+}

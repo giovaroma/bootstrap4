@@ -70,33 +70,6 @@
   }
 }
 
-
-//Breakpoints used to import from CSS to Javascript
-//https://www.lullabot.com/articles/importing-css-breakpoints-into-javascript
-// body:before {
-//   display:none;
-// }
-// @media (min-width: 0px){
-//   body:before {
-//     content:"sm";
-//   }
-// }
-// @media (min-width: 768px) {
-//   body:before {
-//     content:"md";
-//   }
-// }
-// @media (min-width: 992px) {
-//   body:before {
-//     content:"lg";
-//   }
-// }
-// @media (min-width: 1200px) {
-//   body:before {
-//     content:"xl";
-//   }
-// }
-
 //Breaky break points for mobile footer collapse menus
 html:before {
 	content: "mobile,tablet,desktop";
@@ -153,7 +126,6 @@ body:before {
 }
 
 .align-items-start-center {
-
 	align-items: center;
   justify-content: flex-start;
 }
@@ -174,3 +146,61 @@ body:before {
 .flex-direction-column {
   flex-direction: column;
 }
+
+//Flex Wrap Responsive for Images Overflowing so they don't wrap until a specified breakpoint
+@include media-breakpoint-up(xs) {
+  .flex-wrap-responsive {
+    flex-wrap: wrap;
+  }
+  .flex-xs-first {
+    order: -1;
+  }
+  .flex-xs-last {
+    order: 1;
+  }
+  .flex-xs-unordered {
+    order: 0;
+  }
+}//xs
+@include media-breakpoint-up(sm) {
+  .flex-wrap-responsive {
+    flex-wrap: wrap;
+  }
+  .flex-sm-first {
+    order: -1;
+  }
+  .flex-sm-last {
+    order: 1;
+  }
+  .flex-sm-unordered {
+    order: 0;
+  }
+}//sm
+@include media-breakpoint-up(md) {
+  .flex-wrap-responsive {
+    flex-wrap: nowrap;
+  }
+  .flex-md-first {
+    order: -1;
+  }
+  .flex-md-last {
+    order: 1;
+  }
+  .flex-md-unordered {
+    order: 0;
+  }
+}// md
+@include media-breakpoint-up(lg) {
+  .flex-wrap-responsive {
+    flex-wrap: nowrap;
+  }
+  .flex-lg-first {
+    order: -1;
+  }
+  .flex-lg-last {
+    order: 1;
+  }
+  .flex-lg-unordered {
+    order: 0;
+  }
+}// lg

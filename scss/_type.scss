@@ -82,6 +82,10 @@ h6 { font-size: $font-size-h6; }
   .lead {
     font-size: $lead-font-size-xs;
   }
+  .text-justify-hyphen-xs {
+    text-align: justify;
+    hyphens: auto;
+  }
 }//sm mq
 @include media-breakpoint-up(sm) {
   .display-1 {
@@ -103,6 +107,10 @@ h6 { font-size: $font-size-h6; }
   .lead {
     font-size: $lead-font-size-sm;
   }
+  .text-justify-hyphen-sm {
+    text-align: justify;
+    hyphens: auto;
+  }
 }//sm mq
 @include media-breakpoint-up(md) {
   .display-1 {
@@ -121,6 +129,10 @@ h6 { font-size: $font-size-h6; }
     font-size: $display4-size-md;
     font-weight: $display4-weight;
   }
+  .text-justify-hyphen-md {
+    text-align: justify;
+    hyphens: auto;
+  }
 }// sm mq
 @include media-breakpoint-up(lg) {
   .display-1 {
@@ -138,6 +150,10 @@ h6 { font-size: $font-size-h6; }
   .display-4 {
     font-size: $display4-size;
     font-weight: $display4-weight;
+  }
+  .text-justify-hyphen-lg {
+    text-align: justify;
+    hyphens: auto;
   }
 }// sm mq
 
