@@ -1,0 +1,32 @@
+//Responsive Images
+.iphone-ag {
+  margin: 0 auto;
+  @include media-breakpoint-up(xs) {
+    max-width:70%;
+  }//xs
+  @include media-breakpoint-up(sm) {
+    max-width:80%;
+  }//sm
+  @include media-breakpoint-up(md) {
+    max-width:100%;
+  }// md
+  @include media-breakpoint-up(lg) {
+    max-width:100%;
+  }// lg
+}
+
+.ipad-ag {
+  box-shadow:15px 40px 90px -5px rgba(0,0,0,.3);
+  @include media-breakpoint-up(xs) {
+    border-radius: 14px;
+  }//xs
+  @include media-breakpoint-up(sm) {
+    border-radius: 14px;
+  }//sm
+  @include media-breakpoint-up(md) {
+    border-radius: 28px;
+  }// md
+  @include media-breakpoint-up(lg) {
+    border-radius: 28px;
+  }// lg
+}
