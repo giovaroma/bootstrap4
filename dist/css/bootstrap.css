@@ -684,7 +684,7 @@ h6 {
 }
 
 .display-3 {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 
@@ -716,7 +716,7 @@ h6 {
     font-weight: 300;
   }
   .display-3 {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     font-weight: 300;
   }
   .display-4 {
@@ -12273,5 +12273,52 @@ iframe[name='google_conversion_frame'] {
   width: 42px;
   height: 42px;
   vertical-align: middle;
+}
+
+.iphone-ag {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+@media (min-width: 544px) {
+  .iphone-ag {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 768px) {
+  .iphone-ag {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .iphone-ag {
+    max-width: 100%;
+  }
+}
+
+.ipad-ag {
+  border-radius: 14px;
+  -webkit-box-shadow: 15px 40px 90px -5px rgba(0, 0, 0, .3);
+          box-shadow: 15px 40px 90px -5px rgba(0, 0, 0, .3);
+}
+
+@media (min-width: 544px) {
+  .ipad-ag {
+    border-radius: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .ipad-ag {
+    border-radius: 28px;
+  }
+}
+
+@media (min-width: 992px) {
+  .ipad-ag {
+    border-radius: 28px;
+  }
 }
 /*# sourceMappingURL=bootstrap.css.map */
