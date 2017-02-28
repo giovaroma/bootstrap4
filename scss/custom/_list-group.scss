@@ -1,0 +1,53 @@
+//Horizontal list group with icons
+
+.features-list{
+  display:flex;
+  flex-wrap: wrap;
+  padding:0;
+  max-width:992px;
+  .features-list-item {
+    position: relative;
+    padding-left:72px;
+    margin-bottom:4rem;
+    &:last-child {
+      margin-bottom:0;
+    }
+
+    @include media-breakpoint-up(xs) {
+      flex: 0 0 100%;
+    }//xs
+    @include media-breakpoint-up(sm) {
+      flex: 0 0 100%;
+    }//sm
+    @include media-breakpoint-up(md) {
+      flex: 0 0 50%;
+    }// md
+    @include media-breakpoint-up(lg) {
+      flex: 0 0 33.33333%;
+    }// lg
+
+
+    .features-icon {
+      position: absolute;
+      width:42px;
+      height:42px;
+      left:15px;
+      display:inline-block;
+      vertical-align: middle;
+    }
+
+  }
+} //features-list
+
+// @include media-breakpoint-up(xs) {
+//
+// }//xs
+// @include media-breakpoint-up(sm) {
+//
+// }//sm
+// @include media-breakpoint-up(md) {
+//
+// }// md
+// @include media-breakpoint-up(lg) {
+//
+// }// lg
