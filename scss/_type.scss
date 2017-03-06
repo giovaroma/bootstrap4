@@ -341,13 +341,16 @@ mark,
 //Checkmark list
 .list-checkmark {
   &:before {
+    display:flex;
     position:relative;
     top:-3px;
+    // padding-left:72px;
     display: inline-block;
     margin-right:.5rem;
     content:"";
     background-image: url(../img/checkmark-circle.svg);
     background-size: 20px 20px;
+    background-repeat: no-repeat;
     width: 20px;
     height:20px;
     vertical-align:middle;

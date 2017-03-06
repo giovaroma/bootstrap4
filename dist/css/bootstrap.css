@@ -720,7 +720,7 @@ h6 {
     font-weight: 300;
   }
   .display-4 {
-    font-size: 1.125rem;
+    font-size: 1.25rem;
     font-weight: 300;
   }
   .lead {
@@ -750,7 +750,7 @@ h6 {
     font-weight: 300;
   }
   .display-4 {
-    font-size: 1.125rem;
+    font-size: 1.4rem;
     font-weight: 300;
   }
   .text-justify-hyphen-md {
@@ -777,7 +777,7 @@ h6 {
     font-weight: 300;
   }
   .display-4 {
-    font-size: 1.125rem;
+    font-size: 1.5rem;
     font-weight: 300;
   }
   .text-justify-hyphen-lg {
@@ -955,6 +955,10 @@ mark,
 .list-checkmark:before {
   position: relative;
   top: -3px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
   display: inline-block;
   width: 20px;
   height: 20px;
@@ -962,6 +966,7 @@ mark,
   vertical-align: middle;
   content: "";
   background-image: url(../img/checkmark-circle.svg);
+  background-repeat: no-repeat;
   -webkit-background-size: 20px 20px;
           background-size: 20px 20px;
 }
@@ -12227,16 +12232,12 @@ iframe[name='google_conversion_frame'] {
 .features-list .features-list-item {
   position: relative;
   padding-left: 72px;
-  margin-bottom: 4rem;
+  margin-top: 3rem;
 
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 100%;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
-}
-
-.features-list .features-list-item:last-child {
-  margin-bottom: 0;
 }
 
 @media (min-width: 544px) {
